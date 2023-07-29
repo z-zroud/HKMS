@@ -1,0 +1,9 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local ="clr-namespace:HKMS.View"
+                    xmlns:vm ="clr-namespace:HKMS.ViewModel">
+    <DataTemplate DataType="{x:Type vm:NewEpochDialogViewModel}">
+        <local:NewEpochDialog></local:NewEpochDialog>
+    </DataTemplate>
+    
+</ResourceDictionary>

@@ -1,0 +1,325 @@
+﻿<UserControl x:Class="HKMS.View.TemaPanel"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:HKMS.View" 
+             xmlns:vm="clr-namespace:HKMS.ViewModel" 
+             xmlns:conv="clr-namespace:HKMS.Converter"
+             d:DataContext="{d:DesignInstance Type=vm:TemaPanelViewModel}"
+             xmlns:md="http://materialdesigninxaml.net/winfx/xaml/themes"
+             mc:Ignorable="d" 
+             d:DesignHeight="800" d:DesignWidth="1200">
+    <UserControl.DataContext>
+        <vm:TemaPanelViewModel></vm:TemaPanelViewModel>
+    </UserControl.DataContext>
+    <UserControl.Resources>
+        <conv:IntToStringConverter x:Key="IntToStringConverter"></conv:IntToStringConverter>
+    </UserControl.Resources>
+    <md:DialogHost x:Name="RootDialogHost" Identifier="TemaPanelDialogHostId">
+        <Grid Margin="20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.Row="0" Grid.Column="0" Orientation="Horizontal">
+                <Label Style="{StaticResource CircleLabelStyle}" Background="Red" FontSize="25" Content="1" />
+                <TextBox Width="80" Height="30" Margin="20,0,30,0" Text="{Binding Tema1, UpdateSourceTrigger=PropertyChanged}" FontSize="20"></TextBox>
+            </StackPanel>
+            <StackPanel Grid.Row="1" Grid.Column="0" Orientation="Horizontal">
+                <Label Style="{StaticResource CircleLabelStyle}" Background="Red" FontSize="25" Content="2" />
+                <TextBox Width="80" Height="30" Margin="20,0,30,0" Text="{Binding Tema2, UpdateSourceTrigger=PropertyChanged}" FontSize="20"></TextBox>
+            </StackPanel>
+            <StackPanel Grid.Row="2" Grid.Column="0" Orientation="Horizontal">
+                <Label Style="{StaticResource CircleLabelStyle}" Background="Red" FontSize="25" Content="3" />
+                <TextBox Width="80" Height="30" Margin="20,0,30,0" Text="{Binding Tema3, UpdateSourceTrigger=PropertyChanged}" FontSize="20"></TextBox>
+            </StackPanel>
+            <StackPanel Grid.Row="3" Grid.Column="0" Orientation="Horizontal">
+                <Label Style="{StaticResource CircleLabelStyle}" Background="Red" FontSize="25" Content="4" />
+                <TextBox Width="80" Height="30" Margin="20,0,30,0" Text="{Binding Tema4, UpdateSourceTrigger=PropertyChanged}" FontSize="20"></TextBox>
+            </StackPanel>
+            <StackPanel Grid.Row="4" Grid.Column="0" Orientation="Horizontal">
+                <Label Style="{StaticResource CircleLabelStyle}" Background="Red" FontSize="25" Content="5" />
+                <TextBox Width="80" Height="30" Margin="20,0,30,0" Text="{Binding Tema5, UpdateSourceTrigger=PropertyChanged}" FontSize="20"></TextBox>
+            </StackPanel>
+            <StackPanel Grid.Row="5" Grid.Column="0" Orientation="Horizontal">
+                <Label Style="{StaticResource CircleLabelStyle}" Background="Red" FontSize="25" Content="6" />
+                <TextBox Width="80" Height="30" Margin="20,0,30,0" Text="{Binding Tema6, UpdateSourceTrigger=PropertyChanged}" FontSize="20"></TextBox>
+            </StackPanel>
+            <StackPanel Grid.Row="6" Grid.Column="0" Orientation="Horizontal">
+                <Label Style="{StaticResource CircleLabelStyle}" Background="Red" FontSize="25" Content="7" />
+                <TextBox Width="80" Height="30" Margin="20,0,30,0" Text="{Binding Tema7, UpdateSourceTrigger=PropertyChanged}" FontSize="20"></TextBox>
+            </StackPanel>
+            <StackPanel Grid.Row="7" Grid.Column="0" Orientation="Horizontal">
+                <Label Style="{StaticResource CircleLabelStyle}" Background="Red" FontSize="25" Content="8" />
+                <TextBox Width="80" Height="30" Margin="20,0,30,0" Text="{Binding Tema8, UpdateSourceTrigger=PropertyChanged}" FontSize="20"></TextBox>
+            </StackPanel>
+            <StackPanel Grid.Row="8" Grid.Column="0" Orientation="Horizontal">
+                <Label Style="{StaticResource CircleLabelStyle}" Background="Red" FontSize="25" Content="9" />
+                <TextBox Width="80" Height="30" Margin="20,0,30,0" Text="{Binding Tema9, UpdateSourceTrigger=PropertyChanged}" FontSize="20"></TextBox>
+            </StackPanel>
+            <StackPanel Grid.Row="9" Grid.Column="0" Orientation="Horizontal">
+                <Label Style="{StaticResource CircleLabelStyle}" Background="Red" FontSize="25" Content="10" />
+                <TextBox Width="80" Height="30" Margin="20,0,30,0" Text="{Binding Tema10, UpdateSourceTrigger=PropertyChanged}" FontSize="20"></TextBox>
+            </StackPanel>
+            
+            <StackPanel Grid.Row="0" Grid.Column="1" Orientation="Horizontal">
+                <Label Style="{StaticResource CircleLabelStyle}" Background="Red" FontSize="25" Content="11" />
+                <TextBox Width="80" Height="30" Margin="20,0,30,0" Text="{Binding Tema11, UpdateSourceTrigger=PropertyChanged}" FontSize="20"></TextBox>
+            </StackPanel>
+            <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Horizontal">
+                <Label Style="{StaticResource CircleLabelStyle}" Background="Red" FontSize="25" Content="12" />
+                <TextBox Width="80" Height="30" Margin="20,0,30,0" Text="{Binding Tema12, UpdateSourceTrigger=PropertyChanged}" FontSize="20"></TextBox>
+            </StackPanel>
+            <StackPanel Grid.Row="2" Grid.Column="1" Orientation="Horizontal">
+                <Label Style="{StaticResource CircleLabelStyle}" Background="Red" FontSize="25" Content="13" />
+                <TextBox Width="80" Height="30" Margin="20,0,30,0" Text="{Binding Tema13, UpdateSourceTrigger=PropertyChanged}" FontSize="20"></TextBox>
+            </StackPanel>
+            <StackPanel Grid.Row="3" Grid.Column="1" Orientation="Horizontal">
+                <Label Style="{StaticResource CircleLabelStyle}" Background="Red" FontSize="25" Content="14" />
+                <TextBox Width="80" Height="30" Margin="20,0,30,0" Text="{Binding Tema14, UpdateSourceTrigger=PropertyChanged}" FontSize="20"></TextBox>
+            </StackPanel>
+            <StackPanel Grid.Row="4" Grid.Column="1" Orientation="Horizontal">
+                <Label Style="{StaticResource CircleLabelStyle}" Background="Red" FontSize="25" Content="15" />
+                <TextBox Width="80" Height="30" Margin="20,0,30,0" Text="{Binding Tema15, UpdateSourceTrigger=PropertyChanged}" FontSize="20"></TextBox>
+            </StackPanel>
+            <StackPanel Grid.Row="5" Grid.Column="1" Orientation="Horizontal">
+                <Label Style="{StaticResource CircleLabelStyle}" Background="Red" FontSize="25" Content="16" />
+                <TextBox Width="80" Height="30" Margin="20,0,30,0" Text="{Binding Tema16, UpdateSourceTrigger=PropertyChanged}" FontSize="20"></TextBox>
+            </StackPanel>
+            <StackPanel Grid.Row="6" Grid.Column="1" Orientation="Horizontal">
+                <Label Style="{StaticResource CircleLabelStyle}" Background="Red" FontSize="25" Content="17" />
+                <TextBox Width="80" Height="30" Margin="20,0,30,0" Text="{Binding Tema17, UpdateSourceTrigger=PropertyChanged}" FontSize="20"></TextBox>
+            </StackPanel>
+            <StackPanel Grid.Row="7" Grid.Column="1" Orientation="Horizontal">
+                <Label Style="{StaticResource CircleLabelStyle}" Background="Red" FontSize="25" Content="18" />
+                <TextBox Width="80" Height="30" Margin="20,0,30,0" Text="{Binding Tema18, UpdateSourceTrigger=PropertyChanged}" FontSize="20"></TextBox>
+            </StackPanel>
+            <StackPanel Grid.Row="8" Grid.Column="1" Orientation="Horizontal">
+                <Label Style="{StaticResource CircleLabelStyle}" Background="Red" FontSize="25" Content="19" />
+                <TextBox Width="80" Height="30" Margin="20,0,30,0" Text="{Binding Tema19, UpdateSourceTrigger=PropertyChanged}" FontSize="20"></TextBox>
+            </StackPanel>
+            <StackPanel Grid.Row="9" Grid.Column="1" Orientation="Horizontal">
+                <Label Style="{StaticResource CircleLabelStyle}" Background="Red" FontSize="25" Content="20" />
+                <TextBox Width="80" Height="30" Margin="20,0,30,0" Text="{Binding Tema20, UpdateSourceTrigger=PropertyChanged}" FontSize="20"></TextBox>
+            </StackPanel>
+            <StackPanel Grid.Row="0" Grid.Column="2" Orientation="Horizontal">
+                <Label Style="{StaticResource CircleLabelStyle}" Background="Red" FontSize="25" Content="21" />
+                <TextBox Width="80" Height="30" Margin="20,0,30,0" Text="{Binding Tema21, UpdateSourceTrigger=PropertyChanged}" FontSize="20"></TextBox>
+            </StackPanel>
+            <StackPanel Grid.Row="1" Grid.Column="2" Orientation="Horizontal">
+                <Label Style="{StaticResource CircleLabelStyle}" Background="Red" FontSize="25" Content="22" />
+                <TextBox Width="80" Height="30" Margin="20,0,30,0" Text="{Binding Tema22, UpdateSourceTrigger=PropertyChanged}" FontSize="20"></TextBox>
+            </StackPanel>
+            <StackPanel Grid.Row="2" Grid.Column="2" Orientation="Horizontal">
+                <Label Style="{StaticResource CircleLabelStyle}" Background="Red" FontSize="25" Content="23" />
+                <TextBox Width="80" Height="30" Margin="20,0,30,0" Text="{Binding Tema23, UpdateSourceTrigger=PropertyChanged}" FontSize="20"></TextBox>
+            </StackPanel>
+            <StackPanel Grid.Row="3" Grid.Column="2" Orientation="Horizontal">
+                <Label Style="{StaticResource CircleLabelStyle}" Background="Red" FontSize="25" Content="24" />
+                <TextBox Width="80" Height="30" Margin="20,0,30,0" Text="{Binding Tema24, UpdateSourceTrigger=PropertyChanged}" FontSize="20"></TextBox>
+            </StackPanel>
+            <StackPanel Grid.Row="4" Grid.Column="2" Orientation="Horizontal">
+                <Label Style="{StaticResource CircleLabelStyle}" Background="Red" FontSize="25" Content="25" />
+                <TextBox Width="80" Height="30" Margin="20,0,30,0" Text="{Binding Tema25, UpdateSourceTrigger=PropertyChanged}" FontSize="20"></TextBox>
+            </StackPanel>
+            <StackPanel Grid.Row="5" Grid.Column="2" Orientation="Horizontal">
+                <Label Style="{StaticResource CircleLabelStyle}" Background="Red" FontSize="25" Content="26" />
+                <TextBox Width="80" Height="30" Margin="20,0,30,0" Text="{Binding Tema26, UpdateSourceTrigger=PropertyChanged}" FontSize="20"></TextBox>
+            </StackPanel>
+            <StackPanel Grid.Row="6" Grid.Column="2" Orientation="Horizontal">
+                <Label Style="{StaticResource CircleLabelStyle}" Background="Red" FontSize="25" Content="27" />
+                <TextBox Width="80" Height="30" Margin="20,0,30,0" Text="{Binding Tema27, UpdateSourceTrigger=PropertyChanged}" FontSize="20"></TextBox>
+            </StackPanel>
+            <StackPanel Grid.Row="7" Grid.Column="2" Orientation="Horizontal">
+                <Label Style="{StaticResource CircleLabelStyle}" Background="Red" FontSize="25" Content="28" />
+                <TextBox Width="80" Height="30" Margin="20,0,30,0" Text="{Binding Tema28, UpdateSourceTrigger=PropertyChanged}" FontSize="20"></TextBox>
+            </StackPanel>
+            <StackPanel Grid.Row="8" Grid.Column="2" Orientation="Horizontal">
+                <Label Style="{StaticResource CircleLabelStyle}" Background="Red" FontSize="25" Content="29" />
+                <TextBox Width="80" Height="30" Margin="20,0,30,0" Text="{Binding Tema29, UpdateSourceTrigger=PropertyChanged}" FontSize="20"></TextBox>
+            </StackPanel>
+            <StackPanel Grid.Row="9" Grid.Column="2" Orientation="Horizontal">
+                <Label Style="{StaticResource CircleLabelStyle}" Background="Red" FontSize="25" Content="30" />
+                <TextBox Width="80" Height="30" Margin="20,0,30,0" Text="{Binding Tema30, UpdateSourceTrigger=PropertyChanged}" FontSize="20"></TextBox>
+            </StackPanel>
+            <StackPanel Grid.Row="0" Grid.Column="3" Orientation="Horizontal">
+                <Label Style="{StaticResource CircleLabelStyle}" Background="Red" FontSize="25" Content="31" />
+                <TextBox Width="80" Height="30" Margin="20,0,30,0" Text="{Binding Tema31, UpdateSourceTrigger=PropertyChanged}" FontSize="20"></TextBox>
+            </StackPanel>
+            <StackPanel Grid.Row="1" Grid.Column="3" Orientation="Horizontal">
+                <Label Style="{StaticResource CircleLabelStyle}" Background="Red" FontSize="25" Content="32" />
+                <TextBox Width="80" Height="30" Margin="20,0,30,0" Text="{Binding Tema32, UpdateSourceTrigger=PropertyChanged}" FontSize="20"></TextBox>
+            </StackPanel>
+            <StackPanel Grid.Row="2" Grid.Column="3" Orientation="Horizontal">
+                <Label Style="{StaticResource CircleLabelStyle}" Background="Red" FontSize="25" Content="33" />
+                <TextBox Width="80" Height="30" Margin="20,0,30,0" Text="{Binding Tema33, UpdateSourceTrigger=PropertyChanged}" FontSize="20"></TextBox>
+            </StackPanel>
+            <StackPanel Grid.Row="3" Grid.Column="3" Orientation="Horizontal">
+                <Label Style="{StaticResource CircleLabelStyle}" Background="Red" FontSize="25" Content="34" />
+                <TextBox Width="80" Height="30" Margin="20,0,30,0" Text="{Binding Tema34, UpdateSourceTrigger=PropertyChanged}" FontSize="20"></TextBox>
+            </StackPanel>
+            <StackPanel Grid.Row="4" Grid.Column="3" Orientation="Horizontal">
+                <Label Style="{StaticResource CircleLabelStyle}" Background="Red" FontSize="25" Content="35" />
+                <TextBox Width="80" Height="30" Margin="20,0,30,0" Text="{Binding Tema35, UpdateSourceTrigger=PropertyChanged}" FontSize="20"></TextBox>
+            </StackPanel>
+            <StackPanel Grid.Row="5" Grid.Column="3" Orientation="Horizontal">
+                <Label Style="{StaticResource CircleLabelStyle}" Background="Red" FontSize="25" Content="36" />
+                <TextBox Width="80" Height="30" Margin="20,0,30,0" Text="{Binding Tema36, UpdateSourceTrigger=PropertyChanged}" FontSize="20"></TextBox>
+            </StackPanel>
+            <StackPanel Grid.Row="6" Grid.Column="3" Orientation="Horizontal">
+                <Label Style="{StaticResource CircleLabelStyle}" Background="Red" FontSize="25" Content="37" />
+                <TextBox Width="80" Height="30" Margin="20,0,30,0" Text="{Binding Tema37, UpdateSourceTrigger=PropertyChanged}" FontSize="20"></TextBox>
+            </StackPanel>
+            <StackPanel Grid.Row="7" Grid.Column="3" Orientation="Horizontal">
+                <Label Style="{StaticResource CircleLabelStyle}" Background="Red" FontSize="25" Content="38" />
+                <TextBox Width="80" Height="30" Margin="20,0,30,0" Text="{Binding Tema38, UpdateSourceTrigger=PropertyChanged}" FontSize="20"></TextBox>
+            </StackPanel>
+            <StackPanel Grid.Row="8" Grid.Column="3" Orientation="Horizontal">
+                <Label Style="{StaticResource CircleLabelStyle}" Background="Red" FontSize="25" Content="39" />
+                <TextBox Width="80" Height="30" Margin="20,0,30,0" Text="{Binding Tema39, UpdateSourceTrigger=PropertyChanged}" FontSize="20"></TextBox>
+            </StackPanel>
+            <StackPanel Grid.Row="9" Grid.Column="3" Orientation="Horizontal">
+                <Label Style="{StaticResource CircleLabelStyle}" Background="Red" FontSize="25" Content="40" />
+                <TextBox Width="80" Height="30" Margin="20,0,30,0" Text="{Binding Tema40, UpdateSourceTrigger=PropertyChanged}" FontSize="20"></TextBox>
+            </StackPanel>
+            <StackPanel Grid.Row="0" Grid.Column="4" Orientation="Horizontal">
+                <Label Style="{StaticResource CircleLabelStyle}" Background="Red" FontSize="25" Content="41" />
+                <TextBox Width="80" Height="30" Margin="20,0,30,0" Text="{Binding Tema41, UpdateSourceTrigger=PropertyChanged}" FontSize="20"></TextBox>
+            </StackPanel>
+            <StackPanel Grid.Row="1" Grid.Column="4" Orientation="Horizontal">
+                <Label Style="{StaticResource CircleLabelStyle}" Background="Red" FontSize="25" Content="42" />
+                <TextBox Width="80" Height="30" Margin="20,0,30,0" Text="{Binding Tema42, UpdateSourceTrigger=PropertyChanged}" FontSize="20"></TextBox>
+            </StackPanel>
+            <StackPanel Grid.Row="2" Grid.Column="4" Orientation="Horizontal">
+                <Label Style="{StaticResource CircleLabelStyle}" Background="Red" FontSize="25" Content="43" />
+                <TextBox Width="80" Height="30" Margin="20,0,30,0" Text="{Binding Tema43, UpdateSourceTrigger=PropertyChanged}" FontSize="20"></TextBox>
+            </StackPanel>
+            <StackPanel Grid.Row="3" Grid.Column="4" Orientation="Horizontal">
+                <Label Style="{StaticResource CircleLabelStyle}" Background="Red" FontSize="25" Content="44" />
+                <TextBox Width="80" Height="30" Margin="20,0,30,0" Text="{Binding Tema44, UpdateSourceTrigger=PropertyChanged}" FontSize="20"></TextBox>
+            </StackPanel>
+            <StackPanel Grid.Row="4" Grid.Column="4" Orientation="Horizontal">
+                <Label Style="{StaticResource CircleLabelStyle}" Background="Red" FontSize="25" Content="45" />
+                <TextBox Width="80" Height="30" Margin="20,0,30,0" Text="{Binding Tema45, UpdateSourceTrigger=PropertyChanged}" FontSize="20"></TextBox>
+            </StackPanel>
+            <StackPanel Grid.Row="5" Grid.Column="4" Orientation="Horizontal">
+                <Label Style="{StaticResource CircleLabelStyle}" Background="Red" FontSize="25" Content="46" />
+                <TextBox Width="80" Height="30" Margin="20,0,30,0" Text="{Binding Tema46, UpdateSourceTrigger=PropertyChanged}" FontSize="20"></TextBox>
+            </StackPanel>
+            <StackPanel Grid.Row="6" Grid.Column="4" Orientation="Horizontal">
+                <Label Style="{StaticResource CircleLabelStyle}" Background="Red" FontSize="25" Content="47" />
+                <TextBox Width="80" Height="30" Margin="20,0,30,0" Text="{Binding Tema47, UpdateSourceTrigger=PropertyChanged}" FontSize="20"></TextBox>
+            </StackPanel>
+            <StackPanel Grid.Row="7" Grid.Column="4" Orientation="Horizontal">
+                <Label Style="{StaticResource CircleLabelStyle}" Background="Red" FontSize="25" Content="48" />
+                <TextBox Width="80" Height="30" Margin="20,0,30,0" Text="{Binding Tema48, UpdateSourceTrigger=PropertyChanged}" FontSize="20"></TextBox>
+            </StackPanel>
+            <StackPanel Grid.Row="8" Grid.Column="4" Orientation="Horizontal">
+                <Label Style="{StaticResource CircleLabelStyle}" Background="Red" FontSize="25" Content="49" />
+                <TextBox Width="80" Height="30" Margin="20,0,30,0" Text="{Binding Tema49, UpdateSourceTrigger=PropertyChanged}" FontSize="20"></TextBox>
+            </StackPanel>
+            
+            
+            <StackPanel Grid.Row="0" Grid.Column="5" Orientation="Horizontal">
+                <Label Style="{StaticResource CircleLabelStyle}" Background="Red" FontSize="25" Content="鼠" />
+                <TextBox Width="80" Height="30" Margin="20,0,30,0" Text="{Binding Zodiac_shu, UpdateSourceTrigger=PropertyChanged}" FontSize="20"></TextBox>
+            </StackPanel>
+            <StackPanel Grid.Row="1" Grid.Column="5" Orientation="Horizontal">
+                <Label Style="{StaticResource CircleLabelStyle}" Background="Red" FontSize="25" Content="蛇" />
+                <TextBox Width="80" Height="30" Margin="20,0,30,0" Text="{Binding Zodiac_she , UpdateSourceTrigger=PropertyChanged}" FontSize="20"></TextBox>
+            </StackPanel>
+            <StackPanel Grid.Row="2" Grid.Column="5" Orientation="Horizontal">
+                <Label Style="{StaticResource CircleLabelStyle}" Background="Red" FontSize="25" Content="虎" />
+                <TextBox Width="80" Height="30" Margin="20,0,30,0" Text="{Binding Zodiac_hu, UpdateSourceTrigger=PropertyChanged}" FontSize="20"></TextBox>
+            </StackPanel>
+            <StackPanel Grid.Row="3" Grid.Column="5" Orientation="Horizontal">
+                <Label Style="{StaticResource CircleLabelStyle}" Background="Red" FontSize="25" Content="龙" />
+                <TextBox Width="80" Height="30" Margin="20,0,30,0" Text="{Binding Zodiac_long, UpdateSourceTrigger=PropertyChanged}" FontSize="20"></TextBox>
+            </StackPanel>
+            <StackPanel Grid.Row="4" Grid.Column="5" Orientation="Horizontal">
+                <Label Style="{StaticResource CircleLabelStyle}" Background="Red" FontSize="25" Content="牛" />
+                <TextBox Width="80" Height="30" Margin="20,0,30,0" Text="{Binding Zodiac_niu, UpdateSourceTrigger=PropertyChanged}" FontSize="20"></TextBox>
+            </StackPanel>
+            <StackPanel Grid.Row="5" Grid.Column="5" Orientation="Horizontal">
+                <Label Style="{StaticResource CircleLabelStyle}" Background="Red" FontSize="25" Content="羊" />
+                <TextBox Width="80" Height="30" Margin="20,0,30,0" Text="{Binding Zodiac_yang, UpdateSourceTrigger=PropertyChanged}" FontSize="20"></TextBox>
+            </StackPanel>
+            <StackPanel Grid.Row="0" Grid.Column="6" Orientation="Horizontal">
+                <Label Style="{StaticResource CircleLabelStyle}" Background="Red" FontSize="25" Content="狗" />
+                <TextBox Width="80" Height="30" Margin="20,0,30,0" Text="{Binding Zodiac_gou, UpdateSourceTrigger=PropertyChanged}" FontSize="20"></TextBox>
+            </StackPanel>
+            <StackPanel Grid.Row="1" Grid.Column="6" Orientation="Horizontal">
+                <Label Style="{StaticResource CircleLabelStyle}" Background="Red" FontSize="25" Content="鸡" />
+                <TextBox Width="80" Height="30" Margin="20,0,30,0" Text="{Binding Zodiac_ji, UpdateSourceTrigger=PropertyChanged}" FontSize="20"></TextBox>
+            </StackPanel>
+            <StackPanel Grid.Row="2" Grid.Column="6" Orientation="Horizontal">
+                <Label Style="{StaticResource CircleLabelStyle}" Background="Red" FontSize="25" Content="兔" />
+                <TextBox Width="80" Height="30" Margin="20,0,30,0" Text="{Binding Zodiac_tu, UpdateSourceTrigger=PropertyChanged}" FontSize="20"></TextBox>
+            </StackPanel>
+            <StackPanel Grid.Row="3" Grid.Column="6" Orientation="Horizontal">
+                <Label Style="{StaticResource CircleLabelStyle}" Background="Red" FontSize="25" Content="猪" />
+                <TextBox Width="80" Height="30" Margin="20,0,30,0" Text="{Binding Zodiac_zhu, UpdateSourceTrigger=PropertyChanged}" FontSize="20"></TextBox>
+            </StackPanel>
+            <StackPanel Grid.Row="4" Grid.Column="6" Orientation="Horizontal">
+                <Label Style="{StaticResource CircleLabelStyle}" Background="Red" FontSize="25" Content="马" />
+                <TextBox Width="80" Height="30" Margin="20,0,30,0" Text="{Binding Zodiac_ma, UpdateSourceTrigger=PropertyChanged}" FontSize="20"></TextBox>
+            </StackPanel>
+            <StackPanel Grid.Row="5" Grid.Column="6" Orientation="Horizontal">
+                <Label Style="{StaticResource CircleLabelStyle}" Background="Red" FontSize="25" Content="猴" />
+                <TextBox Width="80" Height="30" Margin="20,0,30,0" Text="{Binding Zodiac_hou, UpdateSourceTrigger=PropertyChanged}" FontSize="20"></TextBox>
+            </StackPanel>
+            <Border Grid.Row="0" Grid.RowSpan="10" Grid.Column="7" BorderBrush="Gray" BorderThickness="1,0,0,0">
+                <Grid x:Name="subGrid">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <StackPanel Orientation="Horizontal">
+                        <Label>共</Label>
+                        <Label Content="{Binding BetCount}" FontSize="15" FontWeight="Bold" Foreground="Red"></Label>
+                        <Label>注, 总额</Label>
+                        <Label Content="{Binding TotalBetMoney}" FontSize="15" FontWeight="Bold" Foreground="Red"></Label>
+                        <Label>元</Label>
+                    </StackPanel>
+                    <StackPanel Grid.Row="1" Orientation="Horizontal">
+                        <Label>总投注金额</Label>
+                        <Label Content="{Binding CurrentEpochTotalMoney}" FontSize="15" FontWeight="Bold" Foreground="Red"></Label>
+                        <Label>元</Label>
+                    </StackPanel>
+                    <StackPanel Grid.Row="2" Orientation="Horizontal">
+                        <Label>当前开奖期数:</Label>
+                        <Label Content="{Binding CurrentEpoch}" FontSize="15" FontWeight="Bold" Foreground="Red"></Label>
+                        <Button Command="{Binding NewEpochCommand}" Margin="20,0,0,0">新建奖期</Button>
+                    </StackPanel>
+                    <StackPanel Grid.Row="4" Orientation="Horizontal" Margin="10">
+                        <Button x:Name="Comfirm" Margin="10" Command="{Binding BetCommand}" >确认投注</Button>
+                        <Button  Margin="10" Width="{Binding Path=ActualWidth, ElementName=Comfirm}" Command="{Binding CancelBetCommand}" >取    消</Button>
+                    </StackPanel>
+                </Grid>
+
+            </Border>
+        </Grid>
+    </md:DialogHost>
+</UserControl>
